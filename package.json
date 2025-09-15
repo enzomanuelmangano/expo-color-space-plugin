@@ -29,10 +29,8 @@
   "author": "Enzo Manuel Mangano <enzomanuelmangano@gmail.com> (https://github.com/enzomanuelmangano)",
   "license": "MIT",
   "homepage": "https://github.com/enzomanuelmangano/expo-color-space-plugin#readme",
-  "dependencies": {
-    "@expo/config-plugins": "^7.0.0"
-  },
   "devDependencies": {
+    "@expo/config-plugins": "^7.0.0",
     "expo-module-scripts": "^5.0.7",
     "typescript": "^5.0.0",
     "@types/node": "^18.0.0"
