@@ -1,6 +1,6 @@
 {
   "name": "expo-color-space-plugin",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "An Expo plugin to configure iOS color space",
   "main": "build/index.js",
   "types": "build/index.d.ts",
