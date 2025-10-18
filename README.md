@@ -15,12 +15,31 @@ An Expo config plugin that lets you easily enable P3 Color Space for your app (i
 ## Installation
 
 ```bash
-yarn add -D expo-color-space-plugin
+bun add -D expo-color-space-plugin
 ```
 
-## Usage
+## Quick Setup (Recommended)
 
-In your `app.config.js`/`app.config.ts`/`app.json`:
+After installation, run the apply command to automatically add the plugin to your Expo config:
+
+```bash
+bunx expo-color-space-plugin apply
+```
+
+This will:
+- Detect your Expo config file (`app.json`, `app.config.js`, or `app.config.ts`)
+- Prompt you to choose a color space (displayP3 or SRGB)
+- Automatically add the plugin to your config
+
+You can also specify the color space directly:
+
+```bash
+bunx expo-color-space-plugin apply --colorSpace=displayP3
+```
+
+## Manual Setup
+
+Alternatively, you can manually add the plugin to your `app.config.js`/`app.config.ts`/`app.json`:
 
 ```javascript
 export default {
@@ -49,7 +68,7 @@ export default {
 After adding the plugin, you need to prebuild your iOS app:
 
 ```bash
-npx expo prebuild --clean
+bunx expo prebuild --clean
 ```
 
 ## How it works

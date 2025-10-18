@@ -4,10 +4,13 @@
   "description": "An Expo plugin to configure iOS color space",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "bin": {
+    "expo-color-space-plugin": "./build/cli.js"
+  },
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && chmod +x build/cli.js",
     "clean": "rm -rf build",
-    "prepare": "npm run build",
+    "prepare": "bun run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
